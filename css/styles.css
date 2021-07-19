@@ -698,12 +698,10 @@ ul {
 }
 .modal-form-input:focus {
   outline: none;
-  border-color: blueviolet;
-  /* border-color: rgba(33, 150, 243, 1); */
+  border-color: rgba(33, 150, 243, 1);
 }
 .modal-form-input:focus + .icon-input {
-  background-color: chartreuse;
-  /* fill: chartreuse; */
+  fill: var(--theme-textcolor);
 }
 .modal-form-input-wrapper {
   position: relative;
@@ -711,7 +709,7 @@ ul {
   margin-top: 4px;
 }
 .icon-input {
-  transition-property: background-color;
+  transition-property: fill;
   transition-duration: var(--time-transition-duration);
   transition-timing-function: var(--timing-function);
   position: absolute;
@@ -739,8 +737,7 @@ ul {
   transition-duration: var(--time-transition-duration);
   transition-timing-function: var(--timing-function);
   outline: none;
-  border-color: blueviolet;
-  /* border-color: rgba(33, 150, 243, 1); */
+  border-color: rgba(33, 150, 243, 1);
 }
 .placeholder {
   font-weight: 400;
@@ -758,7 +755,6 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-
   color: #2196f3;
 }
 .modal-form-button {
@@ -781,17 +777,15 @@ ul {
   background-color: #188ce8;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: yellow; */
-  background-image: url(../images/icons.svg#icon-email-black);
-  fill: tomato;
+  background-image: url(../images/icon-check.svg);
 }
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  outline: 2px blue solid;
+  outline: 2px var(--theme-textcolor) solid;
 }
 .modal-form-checkbox-label {
   display: flex;
@@ -806,10 +800,11 @@ ul {
 }
 .modal-form-checkbox-label::before {
   display: block;
+  /* align-self: center; */
   content: "";
-  width: 18px;
-  height: 18px;
-  border: solid tomato 1px;
+  width: 16px;
+  height: 15px;
   cursor: pointer;
   margin-right: 7px;
+  background-image: url(../images/Vector.svg);
 }
