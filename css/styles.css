@@ -741,7 +741,7 @@ ul {
 }
 .placeholder {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 }
@@ -807,4 +807,65 @@ ul {
   cursor: pointer;
   margin-right: 7px;
   background-image: url(../images/Vector.svg);
+}
+/* ============ styles for FOOTER-FORM ============ */
+.footer-form {
+  margin-left: auto;
+}
+.footer-form-head {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hover-textcolor);
+}
+.footer-form-input {
+  width: 358px;
+  /* margin-right: 12px; */
+  padding: 15px 0px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-textcolor);
+}
+.footer-form-button {
+  transition-property: background-color;
+  transition-duration: var(--time-transition-duration);
+  transition-timing-function: var(--timing-function);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--hover-textcolor);
+  background-color: var(--theme-textcolor);
+  border-radius: 4px;
+  padding: 0 28px 0 29px;
+  margin-left: 12px;
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+  background-color: #188ce8;
+}
+.footer-form-wrapper {
+}
+.footer-form-wrapper-common {
+  display: flex;
+}
+.icon-footer-form {
+  width: 24px;
+  height: 24px;
+  /* margin-right: 28px; */
+  margin-left: 10px;
+  background-image: url(../images/icon-send.svg);
 }
