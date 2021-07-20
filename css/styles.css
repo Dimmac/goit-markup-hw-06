@@ -25,7 +25,7 @@
   --card-gap: 30px;
   --line-color: rgba(236, 236, 236, 1);
   --icon-symbol-color: rgba(175, 177, 184, 1);
-  --time-transition-duration: 2500ms;
+  --time-transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --tasks-text-background: rgba(47, 48, 58, 0.8);
 }
@@ -617,7 +617,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgbA(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 
   opacity: 1;
   visibility: visible;
@@ -785,7 +785,7 @@ ul {
   background-image: url(../images/icon-check.svg);
 }
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  outline: 2px var(--theme-textcolor) solid;
+  outline: 1px var(--theme-textcolor) solid;
 }
 .modal-form-checkbox-label {
   display: flex;
@@ -800,7 +800,6 @@ ul {
 }
 .modal-form-checkbox-label::before {
   display: block;
-  /* align-self: center; */
   content: "";
   width: 16px;
   height: 15px;
@@ -823,17 +822,14 @@ ul {
 }
 .footer-form-input {
   width: 358px;
-  /* margin-right: 12px; */
   padding: 15px 0px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
+  color: var(--hover-textcolor);
+  background-color: inherit;
+}
+.footer-form-input::placeholder {
   color: var(--footer-contacts-textcolor);
 }
 .footer-form-button {
@@ -858,14 +854,11 @@ ul {
   background-color: #188ce8;
 }
 .footer-form-wrapper {
-}
-.footer-form-wrapper-common {
   display: flex;
 }
 .icon-footer-form {
   width: 24px;
   height: 24px;
-  /* margin-right: 28px; */
   margin-left: 10px;
   background-image: url(../images/icon-send.svg);
 }
