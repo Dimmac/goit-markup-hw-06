@@ -370,10 +370,8 @@ ul {
   height: 20px;
 }
 /* ============ styles for CLIENTS ============ */
-.clients .container {
-  padding: 94px 0px;
-}
 .clients-title {
+  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -384,9 +382,7 @@ ul {
 .clients-list {
   display: flex;
   margin-top: 50px;
-}
-.clients-list .clients-list-item:not(:last-child) {
-  margin-right: 30px;
+  justify-content: space-between;
 }
 .clients-list-link {
   transition-property: fill, border-color;
@@ -771,6 +767,7 @@ ul {
   letter-spacing: 0.06em;
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
+  border: none;
 }
 .modal-form-button:hover,
 .modal-form-button:focus {
@@ -789,8 +786,8 @@ ul {
 }
 .modal-form-checkbox-label {
   display: flex;
-  margin-top: 20px;
   align-self: center;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -806,6 +803,9 @@ ul {
   cursor: pointer;
   margin-right: 7px;
   background-image: url(../images/Vector.svg);
+}
+.modal-form-line {
+  position: relative;
 }
 /* ============ styles for FOOTER-FORM ============ */
 .footer-form {
@@ -848,6 +848,7 @@ ul {
   border-radius: 4px;
   padding: 0 28px 0 29px;
   margin-left: 12px;
+  border: none;
 }
 .footer-form-button:hover,
 .footer-form-button:focus {
