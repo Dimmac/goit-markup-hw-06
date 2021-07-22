@@ -370,8 +370,11 @@ ul {
   height: 20px;
 }
 /* ============ styles for CLIENTS ============ */
-.clients-title {
+.clients {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
